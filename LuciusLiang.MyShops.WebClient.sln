@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuciusLiang.MyShops.Infrastructure", "LuciusLiang.MyShops.Infrastructure\LuciusLiang.MyShops.Infrastructure.csproj", "{3EA986B6-54D0-47BA-9698-142516E36E23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuciusLiang.MyShops.DataModel", "LucisuLiang.MyShops.DataModel\LuciusLiang.MyShops.DataModel.csproj", "{B36ECCDA-D3F8-4522-87B9-2EBCAD35AA66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_WebApis", "01_WebApis", "{667B50C2-AD56-4E7C-8787-5DF95E0ADE7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09_Common", "09_Common", "{3FC443FF-6DB6-491D-809A-988A658EABFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08_Authorization", "08_Authorization", "{651EBA2B-4025-40C9-B7D6-3E5DAEF79B74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuciusLiang.SSO.Authorization", "LuciusLiang.SSO.Authorization\LuciusLiang.SSO.Authorization.csproj", "{4AFB9E85-71A6-4A22-A76B-1B2680AFBE3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuciusLiang.SSO.UnitTest", "LuciusLiang.SSO.UnitTest\LuciusLiang.SSO.UnitTest.csproj", "{A89B214E-3856-437D-8975-91EC808AB380}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA986B6-54D0-47BA-9698-142516E36E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA986B6-54D0-47BA-9698-142516E36E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA986B6-54D0-47BA-9698-142516E36E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA986B6-54D0-47BA-9698-142516E36E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B36ECCDA-D3F8-4522-87B9-2EBCAD35AA66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B36ECCDA-D3F8-4522-87B9-2EBCAD35AA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B36ECCDA-D3F8-4522-87B9-2EBCAD35AA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B36ECCDA-D3F8-4522-87B9-2EBCAD35AA66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AFB9E85-71A6-4A22-A76B-1B2680AFBE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AFB9E85-71A6-4A22-A76B-1B2680AFBE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AFB9E85-71A6-4A22-A76B-1B2680AFBE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AFB9E85-71A6-4A22-A76B-1B2680AFBE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A89B214E-3856-437D-8975-91EC808AB380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89B214E-3856-437D-8975-91EC808AB380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89B214E-3856-437D-8975-91EC808AB380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89B214E-3856-437D-8975-91EC808AB380}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3EA986B6-54D0-47BA-9698-142516E36E23} = {667B50C2-AD56-4E7C-8787-5DF95E0ADE7D}
+		{B36ECCDA-D3F8-4522-87B9-2EBCAD35AA66} = {3FC443FF-6DB6-491D-809A-988A658EABFD}
+		{4AFB9E85-71A6-4A22-A76B-1B2680AFBE3E} = {651EBA2B-4025-40C9-B7D6-3E5DAEF79B74}
+		{A89B214E-3856-437D-8975-91EC808AB380} = {651EBA2B-4025-40C9-B7D6-3E5DAEF79B74}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20B27963-A3BA-4951-8B0C-31C1ED23A472}
+	EndGlobalSection
+EndGlobal
