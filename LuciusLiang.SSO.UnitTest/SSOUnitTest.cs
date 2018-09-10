@@ -12,7 +12,7 @@ namespace LuciusLiang.SSO.UnitTest
     public class SSOUnitTest
     {
         [Fact]
-        public async void Test1()
+        public async void InfrastructureApiAuthorization()
         {
             var disco = await DiscoveryClient.GetAsync("http://localhost:5000");
 

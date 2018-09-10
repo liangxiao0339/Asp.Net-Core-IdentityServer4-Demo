@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace LuciusLiang.MyShops.Infrastructure.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [EnableCors("AllowSpecificOrigin")]
     [Route("api/SystemSetting/[controller]")]
     [ApiController]

@@ -13,7 +13,6 @@ namespace IdentityServer4.Quickstart.UI
 {
     [SecurityHeaders]
     [Authorize]
-    [EnableCors("AllowSpecificOrigin")]
     public class DiagnosticsController : Controller
     {
         public async Task<IActionResult> Index()

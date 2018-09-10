@@ -13,7 +13,6 @@ namespace IdentityServer4.Quickstart.UI
 {
     [SecurityHeaders]
     [AllowAnonymous]
-    [EnableCors("AllowSpecificOrigin")]
     public class HomeController : Controller
     {
         private readonly IIdentityServerInteractionService _interaction;

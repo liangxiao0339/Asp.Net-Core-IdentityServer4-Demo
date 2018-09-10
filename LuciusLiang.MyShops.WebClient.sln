@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuciusLiang.SSO.Authorizati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuciusLiang.SSO.UnitTest", "LuciusLiang.SSO.UnitTest\LuciusLiang.SSO.UnitTest.csproj", "{A89B214E-3856-437D-8975-91EC808AB380}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuciusLiang.SSO.Account", "LuciusLiang.SSO.Account\LuciusLiang.SSO.Account.csproj", "{3F14A5D9-F0BF-43AF-9060-4805D20944F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A89B214E-3856-437D-8975-91EC808AB380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A89B214E-3856-437D-8975-91EC808AB380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A89B214E-3856-437D-8975-91EC808AB380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F14A5D9-F0BF-43AF-9060-4805D20944F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F14A5D9-F0BF-43AF-9060-4805D20944F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F14A5D9-F0BF-43AF-9060-4805D20944F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F14A5D9-F0BF-43AF-9060-4805D20944F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{B36ECCDA-D3F8-4522-87B9-2EBCAD35AA66} = {3FC443FF-6DB6-491D-809A-988A658EABFD}
 		{4AFB9E85-71A6-4A22-A76B-1B2680AFBE3E} = {651EBA2B-4025-40C9-B7D6-3E5DAEF79B74}
 		{A89B214E-3856-437D-8975-91EC808AB380} = {651EBA2B-4025-40C9-B7D6-3E5DAEF79B74}
+		{3F14A5D9-F0BF-43AF-9060-4805D20944F7} = {651EBA2B-4025-40C9-B7D6-3E5DAEF79B74}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20B27963-A3BA-4951-8B0C-31C1ED23A472}

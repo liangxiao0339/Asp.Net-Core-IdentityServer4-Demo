@@ -27,7 +27,6 @@ namespace IdentityServer4.Quickstart.UI
     /// </summary>
     [SecurityHeaders]
     [AllowAnonymous]
-    [EnableCors("AllowSpecificOrigin")]
     public class AccountController : Controller
     {
         private readonly TestUserStore _users;
@@ -169,7 +168,7 @@ namespace IdentityServer4.Quickstart.UI
             return View(vm);
         }
 
-        
+
         /// <summary>
         /// Show logout page
         /// </summary>

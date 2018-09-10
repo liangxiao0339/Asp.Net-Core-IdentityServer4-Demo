@@ -20,7 +20,6 @@ namespace Host.Quickstart.Account
 {
     [SecurityHeaders]
     [AllowAnonymous]
-    [EnableCors("AllowSpecificOrigin")]
     public class ExternalController : Controller
     {
         private readonly TestUserStore _users;

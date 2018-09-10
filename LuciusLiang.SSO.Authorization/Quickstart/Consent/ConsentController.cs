@@ -21,7 +21,6 @@ namespace IdentityServer4.Quickstart.UI
     /// </summary>
     [SecurityHeaders]
     [Authorize]
-    [EnableCors("AllowSpecificOrigin")]
     public class ConsentController : Controller
     {
         private readonly IIdentityServerInteractionService _interaction;
@@ -34,7 +33,7 @@ namespace IdentityServer4.Quickstart.UI
             IIdentityServerInteractionService interaction,
             IClientStore clientStore,
             IResourceStore resourceStore,
-            IEventService events, 
+            IEventService events,
             ILogger<ConsentController> logger)
         {
             _interaction = interaction;

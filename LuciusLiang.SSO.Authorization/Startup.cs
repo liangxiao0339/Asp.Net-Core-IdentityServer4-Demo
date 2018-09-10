@@ -30,8 +30,7 @@ namespace LuciusLiang.SSO.Authorization
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
                 .AddInMemoryApiResources(GetApiResources())
-                .AddInMemoryClients(GetClients())
-                //.AddInMemoryIdentityResources(GetIdentityResources())
+                .AddInMemoryClients(GetClients())                
                 .AddTestUsers(GetUsers());
 
             services.AddCors(options =>
@@ -82,29 +81,15 @@ namespace LuciusLiang.SSO.Authorization
             {
                 new Client
                 {
-                    ClientId = "AngularClient",
+                    ClientId = "MyShopApi.ClientId",
                     ClientName = "AngularClient Name",
-                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
-                    AllowedCorsOrigins =     { "http://localhost:4200" },
+                    AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,
+                    AllowedCorsOrigins = { "http://localhost:4200" },
                     ClientSecrets = new List<Secret>(){ new Secret("MyShopApi.Secret".Sha256()) },
-                    AllowedScopes =
-                    {
-                        //IdentityServerConstants.StandardScopes.OpenId,
-                        //IdentityServerConstants.StandardScopes.Profile,
-                        "MyShopApi"
-                    }
+                    AllowedScopes = { "MyShopApi" }
                 }
             };
         }
-
-        //public static IEnumerable<IdentityResource> GetIdentityResources()
-        //{
-        //    return new List<IdentityResource>
-        //    {
-        //        new IdentityResources.OpenId(),
-        //        new IdentityResources.Profile(),
-        //    };
-        //}
 
         public static List<TestUser> GetUsers()
         {
