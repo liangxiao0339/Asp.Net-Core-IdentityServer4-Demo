@@ -1,7 +1,9 @@
 using IdentityModel.Client;
+using LuciusLiang.MyShops.DataModel.Infrastructure;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -52,6 +54,22 @@ namespace LuciusLiang.SSO.UnitTest
 
             Assert.True(response.IsSuccessStatusCode);
 
+        }
+
+        [Fact]
+        public void TestReflection()
+        {
+            Stopwatch stop = new Stopwatch();
+            stop.Start();
+
+            for (int i = 0; i < 100000; i++)
+            {
+                var queryProperty = typeof(SidebarMenuDTO).GetProperties();
+            }
+
+            stop.Stop();
+
+            Console.WriteLine(stop.ElapsedMilliseconds);
         }
     }
 

@@ -12,7 +12,7 @@ namespace LuciusLiang.MyShops.DataModel.Infrastructure
         /// <summary>
         /// 文本
         /// </summary>
-        public string Text { get; set; } = "默认文本";
+        public string Text { get; set; }
 
         /// <summary>
         /// i18n主键

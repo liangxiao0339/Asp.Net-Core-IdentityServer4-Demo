@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace LuciusLiang.MyShops.Infrastructure.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [EnableCors("AllowSpecificOrigin")]
     [Route("api/SystemSetting/[controller]")]
     [ApiController]
@@ -40,15 +40,29 @@ namespace LuciusLiang.MyShops.Infrastructure.Controllers
                     }
                 },
                 new SidebarMenuDTO(){
-                    Text = "业务模块",
+                    Text = "库存模块",
                     Group = true,
-                    Icon = "anticon anticon-table",
-                    Link = "/business",
-                    Children = new SidebarMenuDTO[]{
-                        new SidebarMenuDTO(){
-                            Text = "库存管理",
+                    Link = "",
+                    
+                    Children = new SidebarMenuDTO[]
+                    {
+                        new SidebarMenuDTO()
+                        {
+                            Text = "库存明细",
                             Icon = "anticon anticon-table",
-                            Link = "/business/inventory"
+                            Link = "/inventory"
+                        },
+                        new SidebarMenuDTO()
+                        {
+                            Text = "入库单",
+                            Icon = "anticon anticon-table",
+                            Link = "/inboundOrder"
+                        },
+                        new SidebarMenuDTO()
+                        {
+                            Text = "出库单",
+                            Icon = "anticon anticon-table",
+                            Link = "/outboundOrder"
                         }
                     }
                 }

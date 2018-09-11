@@ -22,19 +22,29 @@ namespace LuciusLiang.MyShops.DataModel.Business
         public string ProductName { get; set; }
 
         /// <summary>
-        /// 产品单价
+        /// 单位
         /// </summary>
-        public double ProductPrice { get; set; }
+        public string Unit { get; set; }
 
         /// <summary>
-        /// 所属仓库
+        /// 仓库位置
         /// </summary>
-        public string WarehouseName { get; set; }
+        public string WarehousePosition { get; set; }
 
         /// <summary>
-        /// 库存数量
+        /// 入库数量
         /// </summary>
-        public int Amount { get; set; }
+        public int InboundAmount { get; set; }
+
+        /// <summary>
+        /// 出库数量
+        /// </summary>
+        public int OutboundAmount { get; set; }
+
+        /// <summary>
+        /// 库存量
+        /// </summary>
+        public int InventoryAmount { get; set; }
 
         /// <summary>
         /// 最后更新时间
