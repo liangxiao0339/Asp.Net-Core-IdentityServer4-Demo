@@ -9,16 +9,19 @@ namespace LuciusLiang.MyShops.DataModel.Business
     /// <summary>
     /// 库存模型
     /// </summary>
+    [CacheKey("Inventory")]
     public class InventoryDTO
     {
         /// <summary>
         /// 主键
         /// </summary>
+        [CacheKey("Id")]
         public int Id { get; set; }
-        
+
         /// <summary>
         /// 产品名称
         /// </summary>
+        [CacheKey("ProductName")]
         public string ProductName { get; set; }
 
         /// <summary>
@@ -57,4 +60,26 @@ namespace LuciusLiang.MyShops.DataModel.Business
         public string Remarik { get; set; }
 
     }
+
+    /// <summary>
+    /// Redis 缓存键
+    /// </summary>
+    public class CacheKeyAttribute: Attribute
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="keyName"></param>
+        public CacheKeyAttribute(string keyName)
+        {
+            KeyName = keyName;
+        }
+
+        /// <summary>
+        /// 缓存键名称
+        /// </summary>
+        public string KeyName { get; set; }
+    }
+
+    
 }
